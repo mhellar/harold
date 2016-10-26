@@ -9,6 +9,13 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script>
+  $(document).ready(function(){
+  $('.slider').slider();
+});
+  </script>
 </head>
 <body>
   <nav class="white" role="navigation">
@@ -19,15 +26,49 @@
     </ul>
   </div>
   </nav>
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="background2.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="background1.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
 
-  <div id="index-banner" class="parallax-container">
+      
+
+<!--   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
         <h1 class="header center black-text text-lighten-2">Seakay</h1>
-<!--                 <div class="row center">
+                <div class="row center">
           <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div> -->
+        </div>
         <div class="row center">
           <h5 class="header col s12 light">OPPORTUNITY. BROADBAND. EVERYONE.</h5>
         </div>
@@ -37,7 +78,7 @@
       </div>
     </div>
     <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 1"></div>
-  </div>
+  </div> -->
 
 
   <div class="container">
