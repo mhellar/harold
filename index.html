@@ -1,67 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Parallax Template - Materialize</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Parallax Template - Materialize</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script>
-  $(document).ready(function(){
-  $('.slider').slider();
-});
-  </script>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.slider').slider();
+        });
+        $(document).ready(function() {
+            $('select').material_select();
+        });
+
+        function handleSelection() {
+            var curVal;
+            curVal = document.getElementById('pd_amount').options[document.getElementById('pd_amount').selectedIndex].value;
+            document.getElementById('amount').value = curVal;
+        }
+    </script>
 </head>
+
 <body>
-  <nav class="white" role="navigation">
-<div class="nav-wrapper">
-    <ul class="right hide-on-med-and-down">
-      <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
-    </ul>
-  </div>
-  </nav>
-<div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="background2.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper">
+            <ul class="right hide-on-med-and-down">
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
         </div>
-      </li>
-      <li>
-        <img src="background1.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
-        <div class="caption right-align">
-          <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
+    </nav>
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="background2.jpg">
+                <!-- random image -->
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="background1.jpg">
+                <!-- random image -->
+                <div class="caption left-align">
+                    <h3>Left Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="http://lorempixel.com/580/250/nature/3">
+                <!-- random image -->
+                <div class="caption right-align">
+                    <h3>Right Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="http://lorempixel.com/580/250/nature/4">
+                <!-- random image -->
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
 
-      
 
-<!--   <div id="index-banner" class="parallax-container">
+
+    <!--   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
@@ -81,131 +96,154 @@
   </div> -->
 
 
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">accessibility</i></h2>
-            <h5 class="center">Digital Opportunity</h5>
-
-            <p class="light">While digital opportunity focuses upon those in underserved populations who have not yet discovered the full range of possibilities from new technologies, it extends beyond this point. Digital opportunity also benefits new and emerging businesses, government entities seeking greater connection to those they inform and serve, and public safety and educational entities seeking to extend their reach and eliminate barriers to effectiveness. The Metro Connect network provides a basis for productive interaction for the entire community, offering a greater level of inclusion to all participating constituencies.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">device_hub</i></h2>
-            <h5 class="center">Broadband Networks</h5>
-
-            <p class="light">The network is a catalyst to economic development. Ubiquitous coverage by the network will provide widespread opportunity to the residents, government and businesses. Additionally, it will enable emerging technologies to support development in underserved areas seeking participation in the digital economy. The network is economically viable, built upon a collaborative sponsorship model that seeks efficient and effective achievement of objectives and promotes multiple and diverse sources of revenue.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Non-Profit Management Services</h5>
-
-            <p class="light">SeaKay works with nonprofit organizations to make the most of their administrative resources. SeaKay supports the development of realistic programmatic and organizational development goals, implementing these goals through trainings, coaching and IT support. SeaKay assists in the creation of evaluation criteria to accurately measure progress toward achieving the goals. The processes are straightforward and can be used by all levels of the organization´s staff as well as shared with Board and volunteer leaders</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light"></h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background3.png" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>About Seakay</h4>
-          <p class="left-align light">SeaKay´s mission is to support the nonprofit sector in its efforts to work more effectively and make a significant contribution to social progress and economic development both nationally and internationally.<br><br>
-
-By taking advantage of technology and proven best practices, SeaKay employs a team of nonprofit professionals who lead their field in management consulting, hardware and software systems implementation, financial and fundraising program development and evaluation.
-Among the services we provide are:<br><br>
-
-<br><b>Community Networking:</b><br>
-• Creation of community networking solutions for broadband access and public service applications. Read our brochure.
-<br><b>Financial Management:</b><br>
-• Systems development and implementation, Sarbanes-Oaxley compliance, translating financial information into useful and understandable tools for board, staff and volunteer leaders.
-<br><b>Management Consulting:</b><br>
-• Goal setting, implementation and evaluation systems, Board of Directors Development and executive coaching.
-<br><b>Marketing and Fundraising:</b><br>
-• Message development, creation and implementation of fundraising plans and individual vehicles such as direct mail, major gifts and foundation proposals.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light"></h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 3"></div>
-  </div>
-
-  <footer class="page-footer blue">
     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Contact Seakay</h5>
-          <p class="grey-text text-lighten-4"></p>
+        <div class="section">
 
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">accessibility</i></h2>
+                        <h5 class="center">Digital Opportunity</h5>
+
+                        <p class="light">While digital opportunity focuses upon those in underserved populations who have not yet discovered the full range of possibilities from new technologies, it extends beyond this point. Digital opportunity also benefits new and
+                            emerging businesses, government entities seeking greater connection to those they inform and serve, and public safety and educational entities seeking to extend their reach and eliminate barriers to effectiveness. The Metro
+                            Connect network provides a basis for productive interaction for the entire community, offering a greater level of inclusion to all participating constituencies.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">device_hub</i></h2>
+                        <h5 class="center">Broadband Networks</h5>
+
+                        <p class="light">The network is a catalyst to economic development. Ubiquitous coverage by the network will provide widespread opportunity to the residents, government and businesses. Additionally, it will enable emerging technologies to support
+                            development in underserved areas seeking participation in the digital economy. The network is economically viable, built upon a collaborative sponsorship model that seeks efficient and effective achievement of objectives and
+                            promotes multiple and diverse sources of revenue.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                        <h5 class="center">Non-Profit Management Services</h5>
+
+                        <p class="light">SeaKay works with nonprofit organizations to make the most of their administrative resources. SeaKay supports the development of realistic programmatic and organizational development goals, implementing these goals through trainings,
+                            coaching and IT support. SeaKay assists in the creation of evaluation criteria to accurately measure progress toward achieving the goals. The processes are straightforward and can be used by all levels of the organization´s
+                            staff as well as shared with Board and volunteer leaders</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
-    <div class="footer-copyright">
 
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light"></h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="background3.png" alt="Unsplashed background img 2"></div>
     </div>
-  </footer>
+
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+                <div class="col s12 center">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>About Seakay</h4>
+                    <p class="left-align light">SeaKay´s mission is to support the nonprofit sector in its efforts to work more effectively and make a significant contribution to social progress and economic development both nationally and internationally.<br><br> By taking advantage
+                        of technology and proven best practices, SeaKay employs a team of nonprofit professionals who lead their field in management consulting, hardware and software systems implementation, financial and fundraising program development
+                        and evaluation. Among the services we provide are:<br><br>
+
+                        <br><b>Community Networking:</b><br> • Creation of community networking solutions for broadband access and public service applications. Read our brochure.
+                        <br><b>Financial Management:</b><br> • Systems development and implementation, Sarbanes-Oaxley compliance, translating financial information into useful and understandable tools for board, staff and volunteer leaders.
+                        <br><b>Management Consulting:</b><br> • Goal setting, implementation and evaluation systems, Board of Directors Development and executive coaching.
+                        <br><b>Marketing and Fundraising:</b><br> • Message development, creation and implementation of fundraising plans and individual vehicles such as direct mail, major gifts and foundation proposals.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light"></h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 3"></div>
+    </div>
 
-  </body>
+    <footer class="page-footer blue">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Contact Seakay</h5>
+                    <p class="grey-text text-lighten-4"></p>
+
+
+                </div>
+                <div class="col l6 s12">
+                    <p>Please take this opportunity to contribute to the mission of SeaKay. Donations are accepted through PayPal (which accepts credit card payments). SeaKay, inc. is a registered 501(c)3 organization and all contributions are tax deductible
+                        to the extent permitted by law.</p>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="txt" style="margin-bottom: 0">
+                        <select name="pd_amount" id="pd_amount" onchange="handleSelection();">
+
+                    <option selected value="0">Select a Payment Amount</option>
+                    <option value="25.00">$25.00</option>
+                    <option value="40.00">$40.00</option>
+                    <option value="50.00">$50.00</option>
+                    <option value="100.00">$100.00</option>
+                    <option value="150.00">$150.00</option>
+                    <option value="200.00">$200.00</option>
+          </select>
+                        <br /> OR Type in an amount:<br />
+                        <input type="text" name="amount" id="amount" value="25.00"><br />
+                        <input type="hidden" name="cmd" value="_xclick">
+
+                        <input type="hidden" name="business" value="harold@seakay.org">
+                        <input type="hidden" name="item_name" value="SeaKay.org">
+                        <input type="hidden" name="page_style" value="PayPal">
+                        <input type="hidden" name="no_shipping" value="1">
+                        <input type="hidden" name="return" value="http://www.SeaKay.org">
+                        <input type="hidden" name="cancel_return" value="http://www.seakay.org">
+                        <input type="hidden" name="no_note" value="1">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="hidden" name="tax" value="0">
+                        <br />
+                        <input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+                        <br /><br /><br />
+                        <div style="width: 520px;">
+                            We also accept donations by check or money order. You can send your donation to:
+                            <p style="margin-bottom: 0">
+                                SeaKay, Inc.<br> PO Box 78192<br> San Francisco, CA 94107
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer-copyright">
+
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
 </html>
