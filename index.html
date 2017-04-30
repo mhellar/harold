@@ -19,6 +19,10 @@
         $(document).ready(function() {
             $('select').material_select();
         });
+        $(document).ready(function() {
+            Materialize.updateTextFields();
+        });
+
 
         function handleSelection() {
             var curVal;
@@ -187,12 +191,38 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Contact Seakay</h5>
-                    <p class="grey-text text-lighten-4"></p>
+
+
+                    <h4>CONTACT</h4>
+
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="first_name" type="text" class="validate">
+                                    <label for="first_name">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+
 
 
                 </div>
                 <div class="col l6 s12">
+                    <h4>DONATE</h4>
                     <p>Please take this opportunity to contribute to the mission of SeaKay. Donations are accepted through PayPal (which accepts credit card payments). SeaKay, inc. is a registered 501(c)3 organization and all contributions are tax deductible
                         to the extent permitted by law.</p>
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="txt" style="margin-bottom: 0">
