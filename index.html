@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Seakay</title>
 
   <!-- CSS  -->
@@ -11,11 +11,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/materialize.js"></script>
-  <script>
-  $(document).ready(function(){
-  $('.slider').slider();
-});
-  </script>
+
 </head>
 <body>
 <nav class="white" role="navigation">
@@ -25,7 +21,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#initiatives">Initiatives</a></li>
       <li><a href="broadband.html">Broadband</a></li>
-      <li><a href="collapsible.html">Donate</a></li>
+      <li><a href="#donate">Donate</a></li>
     </ul>
   </div>
 </nav>
@@ -184,24 +180,57 @@
   </div>
 
   <div class="container">
-    <div class="section">
-      <div id="donate" class="row section scrollspy">
-        <div class="col s12 center">
-          <h3>Donate</h5>
-          <p> Please take this opportunity to contribute to the mission of SeaKay. Donations are accepted through PayPal (which accepts credit card payments). SeaKay, inc. is a registered 501(c)3 organization and all contributions are tax deductible to the extent permitted by law.</p>
+      <div id="donate" class="section scrollspy center">
 
-
-
-        <a href="https://www.seakay.org/donate"><button class="btn waves-effect blue">Donate<i class="material-icons right">send</i></button></a>
-
-        <p>We also accept donations by check or money order. You can send your donation to:</p>
-        <p class="center">
-        SeaKay, Inc.<br>
-        PO Box 78192<br>
-        San Francisco, CA 94107 </p>
+        <h3>Donate</h5>
+        <p> Please take this opportunity to contribute to the mission of SeaKay. Donations are accepted through PayPal (which accepts credit card payments). SeaKay, inc. is a registered 501(c)3 organization and all contributions are tax deductible to the extent permitted by law.</p>
       </div>
+
+      <div class="section">
+        <div class="row">
+          <div class="col s3 offset-s3">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="txt">
+                <div class="input-field">
+                  <select name="pd_amount" id="pd_amount">
+                    <option value="" disable selected>Select a Payment Amount</option>
+                    <option value="25.00">$25</option>
+                    <option value="40.00">$40</option>
+                    <option value="50.00">$50</option>
+                    <option value="100.00">$100</option>
+                    <option value="150.00">$150</option>
+                    <option value="200.00">$200</option>
+                  </select>
+                </div>
+
+            Or Type in an amount:
+
+            <div class="input-field">
+              <input type="text" name="amount" id="amount" value="25.00"><br />
+              <input type="hidden" name="cmd" value="_xclick">
+
+              <input type="hidden" name="business" value="harold@seakay.org">
+              <input type="hidden" name="item_name" value="SeaKay.org">
+              <input type="hidden" name="page_style" value="PayPal">
+              <input type="hidden" name="no_shipping" value="1">
+              <input type="hidden" name="return" value="http://www.SeaKay.org">
+              <input type="hidden" name="cancel_return" value="http://www.seakay.org">
+              <input type="hidden" name="no_note" value="1">
+              <input type="hidden" name="currency_code" value="USD">
+              <input type="hidden" name="tax" value="0">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+            </div>
+          </form>
+        </div>
+
+        <div class="col s4">
+          <p>We also accept donations by check or money order. You can send your donation to:</p>
+          <p>
+          SeaKay, Inc.<br>
+          PO Box 78192<br>
+          San Francisco, CA 94107 </p>
+        </div>
+        </div>
       </div>
-    </div>
   </div>
 
   <div class="parallax-container valign-wrapper">
@@ -230,7 +259,7 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
