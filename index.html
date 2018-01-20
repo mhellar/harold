@@ -16,7 +16,7 @@
 <body>
 <nav class="white" role="navigation">
   <div class="nav-wrapper">
-    <a href="#" class="brand-logo light-blue-text text-darken-4">SEAKAY</a>
+    <!-- <a href="#" class="brand-logo light-blue-text text-darken-4">SEAKAY</a> -->
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a href="#about">About</a></li>
       <li><a href="#initiatives">Initiatives</a></li>
@@ -29,51 +29,33 @@
 <div class="slider">
     <ul class="slides">
       <li>
-        <img src="img/kids-tablet-outside.jpg">
+        <img src="img/opportunities-connect.jpg">
         <div class="caption left-align">
-          <h3>The vision:</h3>
-          <h5 class="light grey-text text-lighten-3">Expanding digital opportunity</h5>
+          <h4 class="light grey-text text-lighten-3">Expanding opportunities to connect</h4>
         </div>
       </li>
       <li>
-        <img src="img/fam-computer.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h4>Connecting people to services</h4>
-<!--           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+        <img src="img/families-services.jpg"> <!-- random image -->
+        <div id="slider2" class="caption right-align">
+          <h4 class="light grey-text text-lighten-3">Connecting families to services</h4>
         </div>
       </li>
       <li>
-        <img src="img/dad-daughter.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h4>Expanding opportunities to connect</h4>
+        <img src="img/volunteers-communities.jpg"> <!-- random image -->
+        <div id="slider3" class="caption left-align">
+          <h4 class="light grey-text text-lighten-3">Connecting volunteers to communities</h4>
           <!-- <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+        </div>
+      </li>
+      <li>
+        <img src="img/individuals-opportunities.jpg"> <!-- random image -->
+        <div id="slider4" class="caption center-align">
+          <h4 class="light grey-text text-lighten-3">Connecting individuals to opportunities</h4>
         </div>
       </li>
 
     </ul>
   </div>
-
-
-
-<!--   <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center black-text text-lighten-2">Seakay</h1>
-                <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <div class="row center">
-          <h5 class="header col s12 light">OPPORTUNITY. BROADBAND. EVERYONE.</h5>
-        </div>
-
-        <br><br>
-
-      </div>
-    </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 1"></div>
-  </div> -->
-
 
   <div class="container">
 
@@ -241,7 +223,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="img/family-with-dog.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="img/dad-daughter.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
   <footer class="page-footer light-blue darken-4">
@@ -251,27 +233,21 @@
           <h5 class="white-text">Contact</h5>
           <div class="col s6">
             <form id="ajax-contact" method="post" action="mailer.php">
-                <div class="input-field">
-                    <input type="text" placeholder="Name" id="name" name="name" required>
-                </div>
 
-                <div class="input-field">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+                <input type="text" placeholder="Name" id="name" name="name" required>
 
-                <div class="input-field">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
+                <input type="email" placeholder="Email" id="email" name="email" required>
 
-                <div class="input-field">
-                    <button type="submit">Send</button>
-                </div>
+                <textarea  class="materialize-textarea" placeholder="Message" id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
             </form>
+
+            <div id="form-messages"></div>
           </div>
           <div class="col s4">
-            <p class="grey-text text-lighten-4">SeaKay, Inc <br> PO Box 78192 <br> San Francisco, CA 94107 <br>888.861.1011<br>Email: contact@seakayinc.org</p>
+            <p class="grey-text text-lighten-4">SeaKay, Inc <br> PO Box 78192 <br> San Francisco, CA 94107 <br>888.861.1011<br>
+            <a href="mailto:contact@seakayinc.org">contact@seakayinc.org</a></p>
           </div>
         </div>
       </div>
